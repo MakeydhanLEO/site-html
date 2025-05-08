@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon site perso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        #navbar {
+            background-color: #4CAF50;
+            padding: 10px;
+            text-align: center;
+        }
+        .tab-btn {
+            background-color: #fff;
+            border: none;
+            color: #4CAF50;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .tab-btn:hover {
+            background-color: #ddd;
+        }
+        .section {
+            display: none;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+            margin: 20px auto;
+            width: 80%;
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        h1 {
+            background-color: tomato;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        h2 {
+            background-color: rgb(13, 0, 255);
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        h3 {
+            color: #4CAF50;
+        }
+        .calculator {
+            background: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            width: 300px;
+            margin: 40px auto;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: right;
+            border: none;
+            border-bottom: 2px solid #ddd;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        button {
+            padding: 20px;
+            font-size: 18px;
+            border: none;
+            background-color: #eee;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: #ddd;
+        }
+        .equal {
+            grid-column: span 2;
+            background-color: #4CAF50;
+            color: white;
+        }
+        .equal:hover {
+            background-color: #45a049;
+        }
+        .clear {
+            background-color: #f44336;
+            color: white;
+        }
+        .clear:hover {
+            background-color: #e53935;
+        }
+        .contact-form {
+            margin: 20px auto;
+            width: 80%;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="navbar">
+        <button class="tab-btn" id="btn-cv">CV</button>
+        <button class="tab-btn" id="btn-calc">Calculatrice</button>
+        <button class="tab-btn" id="btn-contact">Contact</button>
+        <button class="tab-btn" id="btn-quest">Questionnaire</button>
+    </div>
+
+    <div id="cv" class="section">
+        <h1>Mon CV</h1>
+        <h2>À savoir sur moi</h2>
+        <p>
+            Je suis quelqu’un de curieux qui aime comprendre comment les choses fonctionnent. J’aime apprendre en faisant et m’adapter aux situations sans trop de stress. J’avance avec sérieux mais toujours avec un certain recul et une bonne dose d’humour.
+        </p>
+        <h2>Mes compétences</h2>
+        <h3>Compétences techniques</h3>
+        <ul>
+            <li>Capacité d’adaptation rapide aux outils et méthodes de travail</li>
+            <li>Bonne compréhension des processus techniques et opérationnels</li>
+            <li>Apprentissage autonome et prise d’initiative</li>
+            <li>Maîtrise des outils informatiques courants</li>
+            <li>Gestion de tâches polyvalentes avec rigueur</li>
+        </ul>
+        <h3>Compétences humaines</h3>
+        <ul>
+            <li>Curiosité et envie constante d’apprendre</li>
+            <li>Sens de l’observation et de l’analyse</li>
+            <li>Sérieux et implication dans les projets</li>
+            <li>Bonne humeur et esprit d’équipe</li>
+            <li>Capacité à garder son calme en toutes circonstances</li>
+            <li>Communication claire et naturelle</li>
+        </ul>
+        <h2>Mes anciennes expériences</h2>
+        <h3>Expérience professionnelle</h3>
+        <h4>Conseiller de vente – Nike</h4>
+        <a href="https://www.nike.com/fr/" target="_blank">Nike</a>
+        <p><strong>Lieu :</strong> Nike aeroville</p>
+        <p><strong>Dates :</strong> juin 2024 - septembre 2025</p>
+        <ul>
+            <li>Accueil, conseil et fidélisation de la clientèle</li>
+            <li>Mise en valeur des produits et merchandising selon les directives de la marque</li>
+            <li>Gestion des encaissements et du réassort</li>
+            <li>Suivi des objectifs de vente individuels et collectifs</li>
+            <li>Participation à l'organisation des opérations commerciales et lancements de collection</li>
+            <li>Travail en équipe dans un environnement dynamique et exigeant</li>
+        </ul>
+    </div>
+
+    <div id="calculatrice" class="section">
+        <h1>Calculatrice</h1>
+        <div class="calculator">
+            <input type="text" id="result" disabled>
+            <div class="buttons">
+                <button onclick="clearResult()" class="clear">C</button>
+                <button onclick="appendValue('(')">(</button>
+                <button onclick="appendValue(')')">)</button>
+                <button onclick="appendValue('/')">÷</button>
+                <button onclick="appendValue('7')">7</button>
+                <button onclick="appendValue('8')">8</button>
+                <button onclick="appendValue('9')">9</button>
+                <button onclick="appendValue('*')">×</button>
+                <button onclick="appendValue('4')">4</button>
+                <button onclick="appendValue('5')">5</button>
+                <button onclick="appendValue('6')">6</button>
+                <button onclick="appendValue('-')">−</button>
+                <button onclick="appendValue('1')">1</button>
+                <button onclick="appendValue('2')">2</button>
+                <button onclick="appendValue('3')">3</button>
+                <button onclick="calculate()" class="equal">=</button>
+                <button onclick="appendValue('0')">0</button>
+                <button onclick="appendValue('.')">.</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="section">
+        <h1>Contact</h1>
+        <form class="contact-form">
+            <input type="text" placeholder="Votre nom" required>
+            <input type="email" placeholder="Votre email" required>
+            <textarea placeholder="Votre message" rows="4" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+
+    <div id="questionnaire" class="section">
+        <h1>Questionnaire</h1>
+        <p>Voici un court questionnaire pour mieux vous connaître :</p>
+        <form class="contact-form">
+            <label for="circuit">Quel est votre circuit de F1 préféré ?</label>
+            <input type="text" id="circuit" required>
+            <label for="experience">Depuis combien de temps suivez-vous la F1 ?</label>
+            <input type="text" id="experience" required>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+
+    <script>
+        function appendValue(value) {
+            document.getElementById("result").value += value;
+        }
+
+        function clearResult() {
+            document.getElementById("result").value = "";
+        }
+
+        function calculate() {
+            try {
+                document.getElementById("result").value = eval(document.getElementById("result").value);
+            } catch {
+                document.getElementById("result").value = "Erreur";
+            }
+        }
+
+        const btns = document.querySelectorAll(".tab-btn");
+        const sections = {
+            "btn-cv": "cv",
+            "btn-calc": "calculatrice",
+            "btn-contact": "contact",
+            "btn-quest": "questionnaire"
+        };
+
+        btns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                for (let key in sections) {
+                    document.getElementById(sections[key]).style.display = "none";
+                }
+                document.getElementById(sections[btn.id]).style.display = "block";
+            });
+        });
+
+        // Affiche la section "cv" au chargement
+        document.getElementById("cv").style.display = "block";
+    </script>
+
+</body>
+</html>
